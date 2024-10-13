@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYS - Portfolio</title>
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--기본 아이폰이 제공하는 UI 처리 사용시-->
+    <link rel="apple-touch-icon" href="portfolio_icon.png">
+    <!--기본 아이폰이 제공하는 UI 처리 사용하지 않을시-->
+    <link rel="apple-touch-icon-precomposed" href="portfolio_icon.png">
+    <!--안드로이드용-->
+    <link rel="shortcut icon" href="portfolio_icon.png">    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="back_font">
+        <div class="back_container" data-container></div>
+    </div>
+    <div id="wrap">
+        <header class="on top">
+            <div class="header_inner">
+                <h1><a href="#wrap">Moon Yeong su Portfolio</a></h1>
+                <button type="button" class="m_btn">
+                    <span>menu button</span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav>
+                <h2 class="screen_out">main navigation</h2>
+                <div class="nav_inner">
+                    <div class="gnb_wrap">
+                        <ul class="gnb clearfix">
+                            <li><a href="#about_anchor">About me</a></li>
+                            <li><a href="#portfolio_anchor">Portfolio</a></li>
+                            <li><a href="#skills_anchor">Skills</a></li>
+                            <li><a href="#story_anchor">My story</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="visual">
+            <div class="video_box">
+                <div class="video_bg">
+                    <iframe src="https://www.youtube.com/embed/r0isW6HrGH0?autoplay=1&mute=1&controls=0&loop=1&playlist=r0isW6HrGH0" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- <iframe src="https://www.youtube.com/embed/mijFJdjEeAs?autoplay=1&mute=1&controls=0&loop=1&playlist=mijFJdjEeAs" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                </div>
+            </div>
+            <div class="visual_text_box">
+                <div class="typed_wrap">
+                    <span class="typing-demo"></span>
+                </div>
+            </div>
+        </div>
+        <main>
+            <section id="about_me_section">
+                <div class="about_inner">
+                    <h2 id="about_anchor">About me</h2>
+                    <div class="about_pic"></div>
+                    <div class="about_textbox">
+                        <ul>
+                            <li>문영수</li>
+                            <li>1998. 03. 09</li>
+                            <li>한경국립대학교 인문융합공공인재학부 (졸업예정)</li>
+                            <li>010-3098-3706</li>
+                            <li>dudtn2933@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio_section">
+                <h2 id="portfolio_anchor">Portfolio</h2>
+                <div class="portfolio_inner">
+                    <div class="portfolio_bg_1"></div>
+                    <div class="portfolio_bg_2"></div>
+                    <div class="portfolio_slider">
+                        <div class="swiper-container-portfolio">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-imgbox01">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="swiper-slide-textbox">
+                                        <h3>현대약품</h3>
+                                        <p>
+                                            현대약품의 페이지를 리뉴얼하여 제작한 반응형 웹사이트입니다. 홈페이지와 회사소개, 회사 연혁 페이지까지 3개의 페이지를 새로 제작하고 많은 효과를 추가한 포트폴리오 웹사이트입니다.
+                                        </p>
+                                        <a href="#">View More</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-imgbox02">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="swiper-slide-textbox">
+                                        <h3>Galleria</h3>
+                                        <p>
+                                            이탈리아의 5성급 호텔인 Galleria Vik Milano의 홈페이지를 포트폴리오 용으로 리뉴얼 하고 많은 애니메이션을 추가하여 제작한 반응형 웹사이트입니다.
+                                        </p>
+                                        <a href="#">View More</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-imgbox03">
+                                        <div></div>
+                                    </div>
+                                    <div class="swiper-slide-textbox">
+                                        <h3>Galaxy Z Flip 5</h3>
+                                        <p>
+                                            Galaxy Z Flip 5의 제품을 주제로 하여 포트폴리오  프로모션 페이지로 제작한 사이트입니다. 
+                                        </p>
+                                        <a href="#">View More</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-imgbox04">
+                                        <div></div>
+                                    </div>
+                                    <div class="swiper-slide-textbox">
+                                        <h3>Chanel</h3>
+                                        <p>
+                                            Chanel의  공식 홈페이지를 리뉴얼하여 제작한 포트폴리오 사이트입니다.
+                                        </p>
+                                        <a href="#">View More</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-imgbox05">
+                                        <div></div>
+                                    </div>
+                                    <div class="swiper-slide-textbox">
+                                        <h3>BlackPink</h3>
+                                        <p>
+                                            BlackPink의 팬사이트 컨셉으로 제작한 포트폴리오 사이트입니다.
+                                        </p>
+                                        <a href="#">View More</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-imgbox06">
+                                        <div></div>
+                                    </div>
+                                    <div class="swiper-slide-textbox">
+                                        <h3>Starbucks</h3>
+                                        <p>
+                                            Starbucks의 홈페이지를 리뉴얼하여 포트폴리오 사이트로 제작한 사이트입니다. 웹 사이트 개발을 배우면서 처음으로 제작해 본 웹사이트입니다.
+                                        </p>
+                                        <a href="#">View More</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-imgbox07">
+                                        <div></div>
+                                    </div>
+                                    <div class="swiper-slide-textbox">
+                                        <h3>미에로화이바</h3>
+                                        <p>
+                                            미에로화이바의 공식 홈페이지를 리뉴얼하여 제작한 포트폴리오 사이트입니다. 
+                                        </p>
+                                        <a href="#">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper_btnbox">
+                                <button class="swiper-button-next"></button>
+                            <button class="swiper-button-prev"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills_section">
+                <div class="skills_inner clearfix">
+                    <h2 id="skills_anchor">Skills</h2>
+                    <div class="skills_lottie">
+                        <div class="skills_anibox">
+                            <div class="lottie-container">
+                                <lottie-player src="./js/skills_animation.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_skillbox">
+                        <div class="skillbox_inner">
+                            <div class="skill_flip front">
+                                <div class="flip_front">
+                                    <p>Skill A</p>
+                                    <span></span>
+                                </div>
+                                <div class="flip_back">
+                                    <p>HTML</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="skill_flip front">
+                                <div class="flip_front">
+                                    <p>Skill B</p>
+                                    <span></span>
+                                </div>
+                                <div class="flip_back">
+                                    <p>CSS</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="skill_flip front">
+                                <div class="flip_front">
+                                    <p>Skill C</p>
+                                    <span></span>
+                                </div>
+                                <div class="flip_back">
+                                    <p>Js</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="skill_flip front">
+                                <div class="flip_front">
+                                    <p>Skill D</p>
+                                    <span></span>
+                                </div>
+                                <div class="flip_back">
+                                    <p>jQuery</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="skill_flip front">
+                                <div class="flip_front">
+                                    <p>Skill E</p>
+                                    <span></span>
+                                </div>
+                                <div class="flip_back">
+                                    <p>Figma</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="skill_flip front">
+                                <div class="flip_front">
+                                    <p>Skill F</p>
+                                    <span></span>
+                                </div>
+                                <div class="flip_back">
+                                    <p>Xd</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="skill_flip front">
+                                <div class="flip_front">
+                                    <p>Skill G</p>
+                                    <span></span>
+                                </div>
+                                <div class="flip_back">
+                                    <p>Ps</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="my_story_section">
+                <div class="story_inner clearfix">
+                    <h2 id="story_anchor">My story</h2>
+                    <div class="story_pic"></div>
+                    <div class="story_textbox">
+                        <p>
+                            고등학교시절 자격증을 다수 취득하고 바로 취업하여 컴퓨터 수리 업무, QC팀에서 CMM장비를 활용한 품질관리 업무를 총 7년 근무하며 다양한 근무 경험을 쌓았고, 회사내에서도 아무런 불화없이 좋은 평가를 받으며 다녔습니다. <br>
+                            그 이후 인터넷을 하며 본 수많은 웹 사이트를 보며 웹 개발 업무로 근무해보고 싶은 마음이 들었던 저는 다니던 직장을 그만두고 HTML, CSS, JavaScript, jQuery, Adobe Xd, Adobe Ps, Figma를 배우며 신입 웹 개발자를 꿈꾸고 노력하고있습니다. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_inner clearfix">
+                <div class="icon_copyright clearfix">
+                    <h3>무료 아이콘, 무료 영상의 저작권자</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.flaticon.com/kr/free-icon/book_5832322?term=%EB%AC%BC%EC%9D%8C%ED%91%9C+%EC%B1%85&page=1&position=36&origin=search&related_id=5832322" title="도움 아이콘" target='_blank'>도움 아이콘 제작자: smashingstocks - Flaticon</a>
+                        </li>
+                        <li>
+                            <a href="https://www.flaticon.com/kr/free-animated-icon/mortarboard_6454106?term=%EA%B5%90%EC%9C%A1&page=1&position=18&origin=search&related_id=6454106" title="교육 애니메이션 아이콘" target='_blank'>교육 애니메이션 아이콘 제작자: Freepik - Flaticon</a>
+                        </li>
+                        <li>
+                            <a href="https://www.flaticon.com/kr/free-animated-icon/social-care_6172524?related_id=6172524" title="people animated icons" target='_blank'>People animated icons created by Freepik - Flaticon</a>
+                        </li>
+                        <li>
+                            <a href="https://www.flaticon.com/free-animated-icon/phone_6172514?term=phone&page=1&position=2&origin=tag&related_id=6172514" title="phone animated icons" target='_blank'>Phone animated icons created by Freepik - Flaticon</a>
+                        </li>
+                        <li>
+                            <a href="https://lottiefiles.com/t2y7aeta2jhbcrpw" title="coding lottie animation" target='_blank'> 코딩 로티 애니메이션 원작자 : Tanya Du Plessis</a>
+                        </li>
+                        <li>
+                            <a href="https://www.flaticon.com/kr/free-animated-icon/birthday_16104645?term=%EC%83%9D%EC%9D%BC&page=1&position=2&origin=search&related_id=16104645" title="생신 애니메이션 아이콘" target='_blank'>생신 애니메이션 아이콘 제작자: Freepik - Flaticon</a>
+                        </li>
+                        <li>
+                            <a href="https://www.flaticon.com/kr/free-animated-icon/mailing_6416397?term=%EC%9D%B4%EB%A9%94%EC%9D%BC&page=1&position=55&origin=search&related_id=6416397" title="이메일 애니메이션 아이콘" target='_blank'>이메일 애니메이션 아이콘 제작자: Freepik - Flaticon</a>
+                        </li>
+                        <li>
+                            <a href="https://pixabay.com/ko/users/ninosouza-8385382/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=23355" target='_blank'>Nino Souza Nino</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <span>
+                        본 사이트는 상업적으로 이용하지 않는 포트폴리오 사이트입니다.
+                    </span>
+                    <span>
+                        © 2024 Moon Yeong Su. All Rights Reserved.
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
