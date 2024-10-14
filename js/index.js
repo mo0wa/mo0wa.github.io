@@ -131,6 +131,7 @@ $(document).ready(function() {
     }
   });
   /*************** 창크기변화감지******************/
+/* 여기서부터 상시작동 함수 */
 /* nav toggle ==> mobile~tablet 에서 작동 */
 $('.m_btn').on('click', function() {
   if (navToggle === 1) {
@@ -143,8 +144,18 @@ $('.m_btn').on('click', function() {
     $('.nav_inner').removeClass().addClass('nav_inner')
   }
 });
-/* 여기서부터 상시작동 함수 */
-
+  /* gnb a 태그 클릭시 하이드 ==> mobile~tablet 에서 작동 */
+$('.gnb a').on('click', function() {
+  if ($("body").find(".Mobile").length) {
+    $('.m_btn').removeClass('on');
+    $('.nav_inner').removeClass().addClass('nav_inner');
+    navToggle = 1;
+  } else if ($("body").find(".Tablet").length) {
+    $('.m_btn').removeClass('on');
+    $('.nav_inner').removeClass().addClass('nav_inner');
+    navToggle = 1;
+  }
+});
 /* header scroll event */
 $(window).on('scroll', function(){
   var scrollTop = $(this).scrollTop();
