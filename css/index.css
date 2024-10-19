@@ -528,24 +528,32 @@ section h2{
 }
 .skill_flip.front .flip_front{
   transform: rotateY(0deg); 
+  -moz-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
   animation: 1s SkillFrontFront;
   -webkit-animation: 1s SkillFrontFront;
   -moz-animation: 1s SkillFrontFront;
 }
 .skill_flip.back .flip_front{
   transform: rotateY(-180deg); 
+  -moz-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
   animation: 1s SkillBackFront;
   -webkit-animation: 1s SkillBackFront;
   -moz-animation: 1s SkillBackFront;
 }
 .skill_flip.front .flip_back{
   transform: rotateY(180deg);  
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   animation: 1s SkillFrontBack;
   -webkit-animation: 1s SkillFrontBack;
   -moz-animation: 1s SkillFrontBack;
 }
 .skill_flip.back .flip_back{
   transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
    animation: 1s SkillBackBack;
    -webkit-animation: 1s SkillBackBack;
    -moz-animation: 1s SkillBackBack;
@@ -560,6 +568,8 @@ section h2{
   padding-top: 13px;
   text-align: center;
   transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 .flip_front p{
   font-size: 1.6rem; font-weight: bold;
@@ -580,6 +590,8 @@ section h2{
   padding-top: 13px;
   text-align: center;
   transform: rotateY(180deg);
+  -moz-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 .flip_back p{
   font-size: 1.6rem; font-weight: bold;
