@@ -563,6 +563,7 @@ section h2{
   width: 100px; height: 100px;
   background: #fff;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 50%;
   border: 2px solid #939393;
   padding-top: 13px;
@@ -572,6 +573,7 @@ section h2{
   -webkit-transform: rotateY(0deg);
   will-change: transform;
   transition: none;
+  transform-origin: center center;
 }
 .flip_front p{
   font-size: 1.6rem; font-weight: bold;
@@ -588,6 +590,7 @@ section h2{
   border-radius: 50%;
   background: #fff;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border: 2px solid #939393;
   padding-top: 13px;
   text-align: center;
@@ -595,7 +598,8 @@ section h2{
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   will-change: transform;
-  transition: none;	
+  transition: none;
+  transform-origin: center center;
 }
 .flip_back p{
   font-size: 1.6rem; font-weight: bold;
