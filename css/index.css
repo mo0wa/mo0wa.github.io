@@ -570,6 +570,8 @@ section h2{
   transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
+  will-change: transform;
+  transition: none;
 }
 .flip_front p{
   font-size: 1.6rem; font-weight: bold;
@@ -590,8 +592,10 @@ section h2{
   padding-top: 13px;
   text-align: center;
   transform: rotateY(180deg);
-  -moz-transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  will-change: transform;
+  transition: none;	
 }
 .flip_back p{
   font-size: 1.6rem; font-weight: bold;
