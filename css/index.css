@@ -497,6 +497,7 @@ section h2{
   transform-style: preserve-3d;
   float: left;
   cursor: pointer;
+  perspective: 1000px;
 }
 .skill_flip:nth-of-type(1){ top: 55px; left: 0;}
 .skill_flip:nth-of-type(2){ top: 0; left: 10px;}
@@ -559,7 +560,6 @@ section h2{
   padding-top: 13px;
   text-align: center;
   transform: rotateY(0deg);
-  transition: 1s ease;
 }
 .flip_front p{
   font-size: 1.6rem; font-weight: bold;
@@ -580,7 +580,6 @@ section h2{
   padding-top: 13px;
   text-align: center;
   transform: rotateY(180deg);
-  transition: 1s ease;
 }
 .flip_back p{
   font-size: 1.6rem; font-weight: bold;
