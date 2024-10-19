@@ -330,11 +330,18 @@ $(window).on('scroll', function() {
       });
     });
 /* 스킬박스 호버효과 */
-$('.skill_flip').mouseenter(function(){
+/* $('.skill_flip').mouseenter(function(){
   $(this).removeClass('front').addClass('back');
 });
 $('.skill_flip').mouseleave(function(){
   $(this).removeClass('back').addClass('front');
-});
+}); */
+/* 스킬박스 클릭효과 */
+$('.flip_front').on('click' , function(){
+  $(this).parent().removeClass('front').addClass('back');
+})
+$('.flip_back').on('click' , function(){
+  $(this).parent().removeClass('back').addClass('front');  
+})
 });
 
