@@ -526,16 +526,28 @@ section h2{
   100% { scale: 1; transform: rotateY(0deg);}
 }
 .skill_flip.front .flip_front{
-  transform: rotateY(0deg); animation: 1s SkillFrontFront;
+  transform: rotateY(0deg); 
+  animation: 1s SkillFrontFront;
+  -webkit-animation: 1s SkillFrontFront;
+  -moz-animation: 1s SkillFrontFront;
 }
 .skill_flip.back .flip_front{
-  transform: rotateY(-180deg); animation: 1s SkillBackFront;
+  transform: rotateY(-180deg); 
+  animation: 1s SkillBackFront;
+  -webkit-animation: 1s SkillBackFront;
+  -moz-animation: 1s SkillBackFront;
 }
 .skill_flip.front .flip_back{
-  transform: rotateY(180deg);  animation: 1s SkillFrontBack;
+  transform: rotateY(180deg);  
+  animation: 1s SkillFrontBack;
+  -webkit-animation: 1s SkillFrontBack;
+  -moz-animation: 1s SkillFrontBack;
 }
 .skill_flip.back .flip_back{
-  transform: rotateY(0deg); animation: 1s SkillBackBack;
+  transform: rotateY(0deg);
+   animation: 1s SkillBackBack;
+   -webkit-animation: 1s SkillBackBack;
+   -moz-animation: 1s SkillBackBack;
 }
 .flip_front{
   position: absolute;
