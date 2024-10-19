@@ -496,6 +496,7 @@ section h2{
   border-radius: 50%;
   transform-style: preserve-3d;
   float: left;
+  cursor: pointer;
 }
 .skill_flip:nth-of-type(1){ top: 55px; left: 0;}
 .skill_flip:nth-of-type(2){ top: 0; left: 10px;}
@@ -504,17 +505,37 @@ section h2{
 .skill_flip:nth-of-type(5){ top: 10px; left: 10px;}
 .skill_flip:nth-of-type(6){ top: 65px; left: 20px;}
 .skill_flip:nth-of-type(7){ top: 20px; left: 110px;}
-.skill_flip.back .flip_front{
-  transform: rotateY(-180deg);
+@keyframes SkillFrontFront{
+  0% { scale: 1; transform: rotateY(180deg);}
+  50% { scale: 1.3; }
+  100% { scale: 1; transform: rotateY(0deg);}
 }
-.skill_flip.back .flip_back{
-  transform: rotateY(0deg);
+@keyframes SkillBackFront{
+  0% { scale: 1; transform: rotateY(0deg);}
+  50% { scale: 1.3; }
+  100% { scale: 1; transform: rotateY(-180deg);}
+}
+@keyframes SkillFrontBack{
+  0% { scale: 1; transform: rotateY(0deg);}
+  50% { scale: 1.3; }
+  100% { scale: 1; transform: rotateY(180deg);}
+}
+@keyframes SkillBackBack{
+  0% { scale: 1; transform: rotateY(-180deg);}
+  50% { scale: 1.3; }
+  100% { scale: 1; transform: rotateY(0deg);}
 }
 .skill_flip.front .flip_front{
-  transform: rotateY(0deg);
+  transform: rotateY(0deg); animation: 1s SkillFrontFront;
+}
+.skill_flip.back .flip_front{
+  transform: rotateY(-180deg); animation: 1s SkillBackFront;
 }
 .skill_flip.front .flip_back{
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);  animation: 1s SkillFrontBack;
+}
+.skill_flip.back .flip_back{
+  transform: rotateY(0deg); animation: 1s SkillBackBack;
 }
 .flip_front{
   position: absolute;
